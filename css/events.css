@@ -9,9 +9,9 @@
 </SwatchLibrary>
 */
 
-/****** 
- * our delicious pallete
- */
+/*************************
+ * our delicious pallete *
+ *************************/
 .darkred_bg { background: #210D12; }
 .bloodred_bg { background: #421114; }
 .brightred_bg { background: #8C0A17; }
@@ -33,26 +33,43 @@
 .darkred_border { border: 1px solid #210D12; }
 .darkred_shadow{ box-shadow: 1px 1px 5px 0px #210D12; }
 
+.darksand_font { color: #B2A379; }
+.darkred_font{ color: #210D12; }
+
+/* a little pre cleaning */
 body, * {
 	margin: 0px;
 	padding: 0px;
 	font-family: monospace;
 }
 
-#wrapper {
+/* id's */
+#app {
+	width: 980px;
+}
+
+#info {
+	width: 300px;	
 	height: 600px;
-	width: 800px;
 	margin-top: 50px;
 	border: 1px solid black;
+	border-left: none;
+}
+
+#wrapper {
+	width: 630px;
+	height: 600px;
+	margin-top: 50px;
+	border: 1px solid black;
+	border-right: none;
 
 }
 
-.depressed {
-	box-shadow: inset 3px 3px 0px 0px #210D12;
-}
+/* things */
+.infoGraphic {
+	width: 260px;
+	margin: 5px 20px 0px 20px;
 
-.visible {
-	
 }
 
 .eGrid {
@@ -64,9 +81,16 @@ body, * {
 
 .eGrid h2 {
 	text-align: center;
+	text-shadow: 1px 1px 1px 0px grey;
+	line-height: 28px;
 }
 
-.offset {
+/* characteristics */
+.depressed {
+	box-shadow: inset 3px 3px 6px 0px #210D12;
+}
+
+.float_left {
 	float: left;
 }
 
@@ -74,8 +98,7 @@ body, * {
 	box-shadow: 3px 3px 6px 0px black;
 }
 
-.fluid {
+.center{
 	positition: relative;
 	margin: 0px auto;
 }
-
