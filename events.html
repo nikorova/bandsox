@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<title> jQuery Event Delegation </title>
+<meta http-equiv="CONTENT-TYPE" content="text/html charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="application/javascript" src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+<link rel="stylesheet" href="css/events.css"/>
+
+</head>
+
+<body class="darksand_bg">
+<div id="wrapper" class="fluid box-shadow bloodred_bg"></div>
+
+
+<script type="application/javascript">
+;$(document).ready(function (e) {
+	for (var i=0; i<36; i++) {
+		var classAtt = i%2 == 0 ? 'lightsand_bg' : 'brightred_bg offset';
+		classAtt = classAtt + ' eGrid visible darkred_border darkred_shadow';
+
+		var div = $('<div />').attr('id','grid'+i)
+		.addClass(classAtt)
+		.html('<h2>hory shet!</h2>');
+
+		$('#wrapper').append(div);
+	}
+
+		$('#wrapper').on('mousedown', '.eGrid', function (e) {
+				console.log("blarg that was from ", e.target);
+				$(e.target).addClass('depressed');
+			});
+
+		$('#wrapper').on('mouseup', '.eGrid', function (e) {
+				console.log("blarg that was from ", e.target);
+				$(e.target).removeClass('depressed');
+			});
+	});
+
+
+</script>
+
+</body>
+</html>

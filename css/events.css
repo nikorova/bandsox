@@ -1,0 +1,81 @@
+/*
+<?xml version="1.0" encoding="utf-8"?>
+<SwatchLibrary xmlns="http://schemas.microsoft.com/expression/design/2007" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="decanter">
+  <SolidColorSwatch Name="#210D12" Color="#FF210D12" />
+  <SolidColorSwatch Name="#421114" Color="#FF421114" />
+  <SolidColorSwatch Name="#8C0A17" Color="#FF8C0A17" />
+  <SolidColorSwatch Name="#B2A379" Color="#FFB2A379" />
+  <SolidColorSwatch Name="#E0D7A9" Color="#FFE0D7A9" />
+</SwatchLibrary>
+*/
+
+/****** 
+ * our delicious pallete
+ */
+.darkred_bg { background: #210D12; }
+.bloodred_bg { background: #421114; }
+.brightred_bg { background: #8C0A17; }
+.darksand_bg { background: #B2A379; }
+.lightsand_bg { background: #E0E7A9; }
+
+.darkred { background: #210D12; }
+.bloodred { background: #421114; }
+.brightred { background: #8C0A17; }
+.darksand { background: #B2A379; }
+.lightsand { background: #E0E7A9; }
+
+.darkred { background: #210D12; }
+.bloodred { background: #421114; }
+.brightred { background: #8C0A17; }
+.darksand { background: #B2A379; }
+.lightsand { background: #E0E7A9; }
+
+.darkred_border { border: 1px solid #210D12; }
+.darkred_shadow{ box-shadow: 1px 1px 5px 0px #210D12; }
+
+body, * {
+	margin: 0px;
+	padding: 0px;
+	font-family: monospace;
+}
+
+#wrapper {
+	height: 600px;
+	width: 800px;
+	margin-top: 50px;
+	border: 1px solid black;
+
+}
+
+.depressed {
+	box-shadow: inset 3px 3px 0px 0px #210D12;
+}
+
+.visible {
+	
+}
+
+.eGrid {
+	height: 28px;
+	width: 198px;
+	margin: 10px 5px;
+	float: left;
+}
+
+.eGrid h2 {
+	text-align: center;
+}
+
+.offset {
+	float: left;
+}
+
+.box-shadow {
+	box-shadow: 3px 3px 6px 0px black;
+}
+
+.fluid {
+	positition: relative;
+	margin: 0px auto;
+}
+

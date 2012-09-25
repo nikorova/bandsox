@@ -1,0 +1,244 @@
+body {
+	background: transparent url("../static/x_pixel_repeat-stripe.png") 0 0 repeat;
+	background-color: #082C44; 
+	font-family: Helvetica, arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+ul { 
+	list-style: none;
+}
+
+article {
+	margin: 0px 60px 0px 20px;
+	padding: 0px 15px 15px 15px;
+}
+
+article h3 {
+	margin: 0px 0px 10px -5px;
+	padding: 0px 0px 0px 0px;
+	border-bottom: 1px solid grey;
+
+}
+
+header {
+	width: 100%;
+	height: 70px;
+	position: relative; 
+
+	background: transparent url("../static/bg_fuzz_head.png") 0 0 repeat-x;
+	box-shadow: 0px 1px 2px black,
+		0px -1px 2px black;
+
+	color: #EEEEEE;
+	z-index: 2;
+}
+
+header h1 {
+	padding: 0px 50px 0px 0px;
+	min-width: 861px;
+	line-height: 50px;
+	text-align: right;
+}
+
+header ul {
+	min-width: 708px;
+	margin: auto 25px auto 0px;
+	line-height: 50px;
+}
+
+header li {
+	width: 165px;
+	margin: 0px 5px 0px 5px; 		
+	display: inline block;
+	float: left;
+
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+}
+
+header li:hover {
+	border: 1px solid black;
+	border-bottom: none;
+	border-top: none;
+	box-shadow: inset 1px 1px 3px black;
+	border-radius: 15px;
+}
+
+header li:active{
+	background: #212121;	
+	box-shadow: inset 3px 3px 7px black;
+	border-radius: 15px;
+}
+
+#bag {
+	position: relative;
+	margin: 0px auto 15px auto;
+	border: 1px solid white;
+}
+
+#other_panel {
+	width: 449px;
+	height: 378px;
+	margin: 0px 0px 0px 50px;
+	padding: 0px 10px 20px 10px;
+
+	float: right;
+	display: none;
+
+	border: 1px solid grey;
+	box-shadow: 1px 1px 8px black;
+	background: #ECECEC;
+}
+
+#butt_panel {
+	margin: 0px 0px 0px 50px; 
+	padding: 0px 10px 20px 10px;
+	float: left;
+	display: block;
+
+	border: 1px solid grey;
+	box-shadow: 1px 1px 8px black;
+	background: #ECECEC;
+}
+
+#wrapper {
+	margin: 0px 50px 15px 50px;
+	width: 724px;
+
+	display: block;
+	float: left;
+	position: relative;
+
+	background: #ECECEC;
+	border: 1px solid grey;
+	box-shadow: 1px 1px 8px black;
+}
+
+#stack {
+	margin: 25px 0px 0px 50px;
+	width: 800px;
+	height: 2000px;
+
+	float: left;
+	position: relative;
+
+	border: 1px solid grey;
+	border-bottom: none;
+	box-shadow: 1px 1px 8px black;
+	background: #ECECEC;
+}
+
+.corner_bit {
+	border-left: 19px solid transparent;
+	border-top: 10px solid #891414;
+	position: relative;
+	top: -15px;
+	left: -20px;
+	width: 0px;
+	z-index:-1;
+}
+
+.corner_bit_rib_left {
+	border-left: 19px solid transparent;
+	border-top: 14px solid #891414;
+	position: relative;
+	top: -15px;
+	left: -25px;
+	width: 0px;
+	z-index:-1;
+}
+
+.corner_bit_rib_right {
+	border-right: 19px solid transparent;
+	border-top: 14px solid #891414;
+	position: relative;
+	top: -29px;
+	right: -266px;
+	width: 0px;
+	z-index:-1;
+}
+
+.head_ribbon {
+	padding: 10px 30px;
+	margin: 10px -25px 15px -25px;
+
+	background: #EEEEEE;
+	background: -moz-linear-gradient(top, #A02829, #891414);
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 7);
+
+	text-shadow: 0px 1px 1px #BA3B3B;
+}
+
+.head_band {
+	width: 70%;
+	padding: 10px 30px;
+	margin: 10px 0px 15px -20px;
+
+	background: #EEEEEE;
+	background: -moz-linear-gradient(top, #A02829, #891414);
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 7);
+
+	text-shadow: 0px 1px 1px #BA3B3B;
+}
+
+/* LE BUTTOHN! */
+.round_button_canvas {
+	margin: 5px 15px 0px 15px;
+}
+
+.round_button {
+	height: 25px;
+	width: 205px;
+	padding: 10px 0px 10px 20px;
+	display: block;
+
+	/* 
+	le button pallete: 
+	blue: 
+	light	#498AF3
+	dark	#295293
+	 */
+	background: #498AF3;
+	background: -moz-linear-gradient(top, #0C4164, #0B324C);
+	background: -webkit-gradient(linear, left top, left bottom, 
+	from(#498AF3), to(#295293));
+	background: linear-gradient(top, #498AF3, #295293);
+
+	border: 2px solid #01497A;
+
+	text-align: left;
+	text-shadow: -1px 0px 0px grey;
+	text-decoration: none;
+
+	line-height: 25px;
+	font-family: monospace;
+	font-size: 2.0em;
+	font-weight: bold;
+	color: white;
+}
+
+.round_button:hover {
+	box-shadow: 1px 1px 3px rgba(100, 100, 100, 1);
+}
+
+.round_button:active{
+	box-shadow: inset 0px 0px 4px #316A91;
+}
+
+@media screen and (max-width: 1157px) {
+	#butt_panel {
+		float: none;
+		margin: auto;
+		margin: 0px 4% 0 4%;
+		min-width: 453px; 
+	}
+
+	#wrapper {
+		width: auto;
+		margin: 0px 4% 4% 4%;
+	}
+}
+
