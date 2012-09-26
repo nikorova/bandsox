@@ -54,6 +54,7 @@ body, * {
 	margin-top: 50px;
 	border: 1px solid black;
 	border-left: none;
+	overflow: auto;
 }
 
 #wrapper {
@@ -67,9 +68,10 @@ body, * {
 
 /* things */
 .infoGraphic {
-	width: 260px;
-	margin: 5px 20px 0px 20px;
-
+	width: 256px;
+	margin: 5px 20px 5px 20px;
+	font-size: 12px;
+	padding: 3px 2px 3px 2px;
 }
 
 .eGrid {
@@ -87,7 +89,7 @@ body, * {
 
 /* characteristics */
 .depressed {
-	box-shadow: inset 3px 3px 6px 0px #210D12;
+	box-shadow: inset 3px 3px 4px 0px #210D12;
 }
 
 .float_left {

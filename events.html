@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script type="application/javascript" src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+<!--<script type="application/javascript" src="js/jquery-1.7.2.js"></script>-->
 <link rel="stylesheet" href="css/events.css"/>
 
 </head>
@@ -15,20 +16,19 @@
 
 <div id="app" class="fluid center box-shadow">
 	<div id="wrapper" class="center float_left bloodred_bg"></div>
-	<section id="info"class="center float_left bloodred_bg" ></section>
+	<section id="info"class="center float_left bloodred_bg" ><ul id="ilist"></ul></section>
 </div>
 
 <script type="application/javascript">
+
 ;$(document).ready(function (e) {
 		var idWrapper = $('#wrapper');
 		var classEGrid = $('.eGrid');
-		var idInfoBar = $('#info');
+		var idInfoBar = $('#ilist');
 
 		// dynamically gen'd divs
-		var divInfoGraphic = $('<div />')
-			.addClass('infoGraphic darkred_font darksand_bg box-shadow');
-
 		for (var i=0; i<36; i++) {
+
 			var classAtt = i%2 == 0 ? 'lightsand_bg darksand_font' : 'brightred_bg darkred_font';
 			classAtt = classAtt + ' eGrid visible darkred_border darkred_shadow';
 
@@ -39,20 +39,27 @@
 			idWrapper.append(div);
 		}
 
+		// oh hai event handler
+		idWrapper.on('oh_hai', function (e) {
+			divInfoGraphic.html('oh_hai event!');
+			idInfoBar.append(divInfoGraphic);
+		});
+
+
 		// click handlers for hai grid
 		idWrapper.on('mousedown', '.eGrid', function (e) {
 		 	// add depressed class
 			$(e.target).addClass('depressed');
-			console.log('hai grid :', e.target);
 
 			//add info graphic to info div
 			targetID = $(e.target).attr('id');
 
-			divInfoGraphic.attr('id', targetID)
-				.html('clicky clicky on ' + targetID + ' ' + e.target);	
+			var infoGraphic = $('<div />')
+				.addClass('infoGraphic darkred_border darksand_bg box-shadow darkred_font')
+				.html('click event on ' + targetID + ' ' + e.target);
 
-			console.log('appending ', divInfoGraphic);
-			idInfoBar.append(divInfoGraphic);
+			idInfoBar.append(infoGraphic);
+
 		});
 
 		idWrapper.on('mouseup', '.eGrid', function (e) {
